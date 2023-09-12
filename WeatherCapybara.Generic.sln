@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherCapybara.Generic.Shared", "WeatherCapybara.Generic.Shared\WeatherCapybara.Generic.Shared.csproj", "{2848181D-9AFF-4171-8604-F0E8373C5761}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherCapybara.Generic.WeatherApiClient", "WeatherCapybara.Generic.WeatherApiClient\WeatherCapybara.Generic.WeatherApiClient.csproj", "{ACAF3062-8A98-4B72-BBC4-4433754D6DAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherCapybara.Generic.MeteostatApiClient", "WeatherCapybara.Generic.MeteostatApiClient\WeatherCapybara.Generic.MeteostatApiClient.csproj", "{3DEDF38C-9BAF-44E7-94C7-899049EE5055}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherCapybara.Generic.Domain", "WeatherCapybara.Generic.Domain\WeatherCapybara.Generic.Domain.csproj", "{92CF7724-D280-4E40-864A-4A3AEC6792BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherCapybara.Generic.VisualCrossingWeatherApiClient", "WeatherCapybara.Generic.VisualCrossingWeatherApiClient\WeatherCapybara.Generic.VisualCrossingWeatherApiClient.csproj", "{3A838982-3974-4C24-93A5-FC693F26FFF6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiClients", "ApiClients", "{579FCB8C-CC92-406B-BE5E-BAEE3FF11101}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9ADC43E3-798A-42D6-B6FF-2D1F59A8BE8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherCapybara.Generic.WeatherApiClient.Tests", "WeatherCapybara.Generic.WeatherApiClient.Tests\WeatherCapybara.Generic.WeatherApiClient.Tests.csproj", "{53F02539-3794-499B-9625-C29E6567F529}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherCapybara.Generic.Helpers", "WeatherCapybara.Generic.Helpers\WeatherCapybara.Generic.Helpers.csproj", "{74BAB7F4-CFEA-4F64-907F-FF10B0E5D240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherCapybara.Generic.VisualCrossingWeatherApiClient.Tests", "WeatherCapybara.Generic.VisualCrossingWeatherApiClient.Tests\WeatherCapybara.Generic.VisualCrossingWeatherApiClient.Tests.csproj", "{3303B530-DC59-4381-B60E-8993F373380C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherCapybara.Generic.MeteostatApiClient.Tests", "WeatherCapybara.Generic.MeteostatApiClient.Tests\WeatherCapybara.Generic.MeteostatApiClient.Tests.csproj", "{C8DF0DEF-804E-47CC-A732-F51C6C0DCF7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2848181D-9AFF-4171-8604-F0E8373C5761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2848181D-9AFF-4171-8604-F0E8373C5761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2848181D-9AFF-4171-8604-F0E8373C5761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2848181D-9AFF-4171-8604-F0E8373C5761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACAF3062-8A98-4B72-BBC4-4433754D6DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACAF3062-8A98-4B72-BBC4-4433754D6DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACAF3062-8A98-4B72-BBC4-4433754D6DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACAF3062-8A98-4B72-BBC4-4433754D6DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DEDF38C-9BAF-44E7-94C7-899049EE5055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DEDF38C-9BAF-44E7-94C7-899049EE5055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DEDF38C-9BAF-44E7-94C7-899049EE5055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DEDF38C-9BAF-44E7-94C7-899049EE5055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92CF7724-D280-4E40-864A-4A3AEC6792BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92CF7724-D280-4E40-864A-4A3AEC6792BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92CF7724-D280-4E40-864A-4A3AEC6792BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92CF7724-D280-4E40-864A-4A3AEC6792BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A838982-3974-4C24-93A5-FC693F26FFF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A838982-3974-4C24-93A5-FC693F26FFF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A838982-3974-4C24-93A5-FC693F26FFF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A838982-3974-4C24-93A5-FC693F26FFF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F02539-3794-499B-9625-C29E6567F529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F02539-3794-499B-9625-C29E6567F529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F02539-3794-499B-9625-C29E6567F529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F02539-3794-499B-9625-C29E6567F529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74BAB7F4-CFEA-4F64-907F-FF10B0E5D240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BAB7F4-CFEA-4F64-907F-FF10B0E5D240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BAB7F4-CFEA-4F64-907F-FF10B0E5D240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BAB7F4-CFEA-4F64-907F-FF10B0E5D240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3303B530-DC59-4381-B60E-8993F373380C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3303B530-DC59-4381-B60E-8993F373380C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3303B530-DC59-4381-B60E-8993F373380C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3303B530-DC59-4381-B60E-8993F373380C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8DF0DEF-804E-47CC-A732-F51C6C0DCF7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8DF0DEF-804E-47CC-A732-F51C6C0DCF7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8DF0DEF-804E-47CC-A732-F51C6C0DCF7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8DF0DEF-804E-47CC-A732-F51C6C0DCF7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ACAF3062-8A98-4B72-BBC4-4433754D6DAD} = {579FCB8C-CC92-406B-BE5E-BAEE3FF11101}
+		{3A838982-3974-4C24-93A5-FC693F26FFF6} = {579FCB8C-CC92-406B-BE5E-BAEE3FF11101}
+		{3DEDF38C-9BAF-44E7-94C7-899049EE5055} = {579FCB8C-CC92-406B-BE5E-BAEE3FF11101}
+		{53F02539-3794-499B-9625-C29E6567F529} = {9ADC43E3-798A-42D6-B6FF-2D1F59A8BE8D}
+		{3303B530-DC59-4381-B60E-8993F373380C} = {9ADC43E3-798A-42D6-B6FF-2D1F59A8BE8D}
+		{C8DF0DEF-804E-47CC-A732-F51C6C0DCF7B} = {9ADC43E3-798A-42D6-B6FF-2D1F59A8BE8D}
+	EndGlobalSection
+EndGlobal
