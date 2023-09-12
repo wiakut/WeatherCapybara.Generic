@@ -13,7 +13,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    env:
+      USERNAME: ${{ secrets.USERNAME }}
+      TOKEN: ${{ secrets.TOKEN }}
+      OWNER: wiakut
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -28,9 +31,5 @@ jobs:
       run: dotnet pack -c Release -o ./output
     - name: Publish to GitHub Packages
       run: |
-        nuget source add -n github -u USERNAME -p TOKEN -s https://nuget.pkg.github.com/OWNER/index.json
+        nuget source add -n github -u $USERNAME -p $TOKEN -s https://nuget.pkg.github.com/$OWNER/index.json
         nuget push ./output/*.nupkg -Source github
-      env:
-        USERNAME: ${{ secrets.USERNAME }}
-        TOKEN: ${{ secrets.TOKEN }}
-        OWNER: wiakut
