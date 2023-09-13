@@ -1,4 +1,5 @@
-﻿using WeatherCapybara.Generic.Domain.Models;
+﻿using Microsoft.Extensions.Logging;
+using WeatherCapybara.Generic.Domain.Models;
 using WeatherCapybara.Generic.Helpers.Contants;
 using WeatherCapybara.Generic.MeteostatApiClient.Interfaces;
 using WeatherCapybara.Generic.MeteostatApiClient.Services;
@@ -23,7 +24,7 @@ public class MeteostatApiClientServiceIntegrationTest : IDisposable
             BaseAddress = new Uri("https://meteostat.p.rapidapi.com"),
         };
 
-        _meteostatApiClientService = new MeteostatApiClientService(_httpClient);
+        _meteostatApiClientService = new MeteostatApiClientService(_httpClient, new Logger<MeteostatApiClientService>(new LoggerFactory()));
     }
 
     [Fact]

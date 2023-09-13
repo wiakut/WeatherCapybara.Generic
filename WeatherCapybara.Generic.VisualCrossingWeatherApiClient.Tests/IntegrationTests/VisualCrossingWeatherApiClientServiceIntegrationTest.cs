@@ -1,4 +1,5 @@
-﻿using WeatherCapybara.Generic.Helpers.Contants;
+﻿using Microsoft.Extensions.Logging;
+using WeatherCapybara.Generic.Helpers.Contants;
 using WeatherCapybara.Generic.VisualCrossingWeatherApiClient.Interfaces;
 using WeatherCapybara.Generic.VisualCrossingWeatherApiClient.Models;
 using WeatherCapybara.Generic.VisualCrossingWeatherApiClient.Services;
@@ -23,7 +24,7 @@ public class VisualCrossingWeatherApiClientServiceIntegrationTest : IDisposable
             BaseAddress = new Uri("https://visual-crossing-weather.p.rapidapi.com"),
         };
 
-        _visualCrossingWeatherApiClientService = new VisualCrossingWeatherApiClientService(_httpClient);
+        _visualCrossingWeatherApiClientService = new VisualCrossingWeatherApiClientService(_httpClient, new Logger<VisualCrossingWeatherApiClientService>(new LoggerFactory()));
     }
 
     [Fact]

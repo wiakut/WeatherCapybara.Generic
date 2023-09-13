@@ -2,6 +2,7 @@
 using WeatherCapybara.Generic.Helpers.Contants;
 using WeatherCapybara.Generic.MeteostatApiClient.Interfaces;
 using WeatherCapybara.Generic.MeteostatApiClient.Services;
+using WeatherCapybara.Generic.Shared.Common.Extensions;
 
 namespace WeatherCapybara.Generic.MeteostatApiClient.Extensions;
 
@@ -14,7 +15,7 @@ public static class MeteostatApiClientDependencyInjection
             httpClient.DefaultRequestHeaders.Add(ApiClientConstants.RapidClientApiKeyHeaderKey, "a383d65229mshef9ddd92b69e9f9p115938jsnf7c823904f4a");
             httpClient.DefaultRequestHeaders.Add(ApiClientConstants.RapidClientApiHostHeaderKey, "meteostat.p.rapidapi.com");
             httpClient.BaseAddress = new Uri("https://meteostat.p.rapidapi.com");
-        });
+        }).AddGenericHttpClientRetryPolicy();
         
         return services;
     }

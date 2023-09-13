@@ -15,6 +15,7 @@
     <ItemGroup>
       <ProjectReference Include="..\WeatherCapybara.Generic.Domain\WeatherCapybara.Generic.Domain.csproj" />
       <ProjectReference Include="..\WeatherCapybara.Generic.Helpers\WeatherCapybara.Generic.Helpers.csproj" />
+      <ProjectReference Include="..\WeatherCapybara.Generic.Shared\WeatherCapybara.Generic.Shared.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
-﻿using WeatherCapybara.Generic.Domain.Models;
+﻿using Microsoft.Extensions.Logging;
+using WeatherCapybara.Generic.Domain.Models;
 using WeatherCapybara.Generic.Helpers.Contants;
 using WeatherCapybara.Generic.WeatherApiClient.Services;
 using Xunit;
@@ -22,7 +23,7 @@ public class WeatherApiClientServiceIntegrationTest : IDisposable
             BaseAddress = new Uri("https://weatherapi-com.p.rapidapi.com"),
         };
 
-        _weatherApiClientService = new WeatherApiClientService(_httpClient);
+        _weatherApiClientService = new WeatherApiClientService(_httpClient, new Logger<WeatherApiClientService>(new LoggerFactory()));
     }
 
     [Fact]
