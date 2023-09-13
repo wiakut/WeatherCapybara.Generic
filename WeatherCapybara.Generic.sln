@@ -22,6 +22,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherCapybara.Generic.Vis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherCapybara.Generic.MeteostatApiClient.Tests", "WeatherCapybara.Generic.MeteostatApiClient.Tests\WeatherCapybara.Generic.MeteostatApiClient.Tests.csproj", "{C8DF0DEF-804E-47CC-A732-F51C6C0DCF7B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74BA43A4-0369-4E64-8160-E2EB8CED3356}"
+	ProjectSection(SolutionItems) = preProject
+		WeatherCapybara.nuspec = WeatherCapybara.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

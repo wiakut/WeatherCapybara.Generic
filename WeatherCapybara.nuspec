@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+    <metadata>
+        <id>WeatherCapybara.Generic</id>
+        <version>1.0.0</version>
+        <title>WeatherCapybara.Generic</title>
+        <authors>wiakut</authors>
+        <owners>wiakut</owners>
+        <description>Generic library for WeatherCapybara project</description>
+        <tags>WeatherCapybara.Generic</tags>
+        <summary>Generic library for WeatherCapybara project</summary>
+        <copyright>Copyright 2023</copyright>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <releaseNotes>Release :)</releaseNotes>
+        
+        <dependencies>
+            <dependency id="FluentValidation.DependencyInjectionExtensions" version="11.7.1" />
+            <dependency id="MediatR" version="12.1.1" />
+            <dependency id="Microsoft.Extensions.DependencyInjection" version="7.0.0" />
+            <dependency id="Microsoft.Extensions.Logging" version="7.0.0" />
+            <dependency id="Microsoft.Extensions.Http" version="7.0.0" />
+            <dependency id="Newtonsoft.Json" version="13.0.3" />
+        </dependencies>
+    </metadata>
+    
+    <files>
+        <file src="WeatherCapybara.Generic.Domain\bin\Release\net7.0\WeatherCapybara.Generic.Domain.dll" target="lib\net7.0" />
+        <file src="WeatherCapybara.Generic.Helpers\bin\Release\net7.0\WeatherCapybara.Generic.Helpers.dll" target="lib\net7.0" />
+        <file src="WeatherCapybara.Generic.MeteostatApiClient\bin\Release\net7.0\WeatherCapybara.Generic.MeteostatApiClient.dll" target="lib\net7.0" />
+        <file src="WeatherCapybara.Generic.Shared\bin\Release\net7.0\WeatherCapybara.Generic.Shared.dll" target="lib\net7.0" />
+        <file src="WeatherCapybara.Generic.VisualCrossingWeatherApiClient\bin\Release\net7.0\WeatherCapybara.Generic.VisualCrossingWeatherApiClient.dll" target="lib\net7.0" />
+        <file src="WeatherCapybara.Generic.WeatherApiClient\bin\Release\net7.0\WeatherCapybara.Generic.WeatherApiClient.dll" target="lib\net7.0" />
+    </files>
+</package>

@@ -8,16 +8,26 @@ namespace WeatherCapybara.Generic.Shared.DependencyInjection;
 
 public static class SharedDependencyInjection
 {
-    public static IServiceCollection AddSharedServices(
+    public static IServiceCollection AddWeatherCapybaraGenericServices(
         this IServiceCollection services, 
         params Assembly[] assemblies)
     {
-        var assembly = typeof(SharedDependencyInjection).Assembly;
-
         services.AddMediatR(configuration =>
             configuration.RegisterServicesFromAssemblies(assemblies));
 
         services.AddValidatorsFromAssemblies(assemblies, includeInternalTypes: true);
+        return services;
+    }
+    
+    public static IServiceCollection AddWeatherCapybaraGenericServices(
+        this IServiceCollection services)
+    {
+        var assembly = typeof(SharedDependencyInjection).Assembly;
+
+        services.AddMediatR(configuration =>
+            configuration.RegisterServicesFromAssembly(assembly));
+
+        services.AddValidatorsFromAssembly(assembly, includeInternalTypes: true);
         return services;
     }
     
