@@ -38,7 +38,7 @@ public class VisualCrossingWeatherApiClientServiceIntegrationTest : IDisposable
         var result = await _visualCrossingWeatherApiClientService.GetVisualCrossingWeatherApiWeatherHistoryByCityAndCountryCode(
             city, countryCode, startDate, endDate);
 
-        Assert.NotNull(result);
+        Assert.True(result.IsSuccess);
     }
 
     public void Dispose()

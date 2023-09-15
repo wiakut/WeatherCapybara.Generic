@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Polly;
+using Polly.Extensions.Http;
 
 namespace WeatherCapybara.Generic.Shared.Common.Extensions;
 
@@ -10,9 +11,8 @@ public static class PollyExtensions
     {
         httpClientBuilder.AddPolicyHandler((serviceProvider, httpRequestMessage) =>
         {
-            return Policy
-                .Handle<Exception>()
-                .OrResult<HttpResponseMessage>(r => !r.IsSuccessStatusCode)
+            return HttpPolicyExtensions
+                .HandleTransientHttpError()
                 .WaitAndRetryAsync(3, sleepDuration => TimeSpan.FromSeconds(3), (result, timeSpan, retryCount, context) =>
                 {
                     if (serviceProvider.GetService<ILogger>() is not { } logger) return;

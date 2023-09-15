@@ -38,7 +38,7 @@ public class WeatherApiClientServiceIntegrationTest : IDisposable
         var result = await _weatherApiClientService.GetWeatherApiWeatherHistoryByPoint(point, startDate, endDate);
 
         // Assert
-        Assert.NotNull(result);
+        Assert.True(result.IsSuccess);
     }
 
     public void Dispose()

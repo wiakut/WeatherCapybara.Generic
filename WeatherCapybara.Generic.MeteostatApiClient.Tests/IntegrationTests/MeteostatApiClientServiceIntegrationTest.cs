@@ -39,7 +39,7 @@ public class MeteostatApiClientServiceIntegrationTest : IDisposable
         var result = await _meteostatApiClientService.GetMeteostatApiWeatherHistoryByPoint(point, startDate, endDate);
 
         // Assert
-        Assert.NotNull(result);
+        Assert.True(result.IsSuccess);
     }
 
     public void Dispose()
